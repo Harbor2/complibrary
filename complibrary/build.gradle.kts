@@ -43,8 +43,8 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
                 groupId = "com.github.Harbor2"
-                artifactId = "emlibrary"
-                version = "1.0.7"
+                artifactId = "complibrary"
+                version = "1.0.3"
             }
         }
     }
