@@ -5,11 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.wyz.complibrary"
+    namespace = "com.wyz.testlibrary"
     compileSdk = 34
 
     defaultConfig {
         minSdk = 23
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -32,6 +34,7 @@ android {
 }
 
 dependencies {
+
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
@@ -43,7 +46,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
                 groupId = "com.github.Harbor2"
-                artifactId = "complibrary"
+                artifactId = "testlibrary"
                 version = "1.0.4"
             }
         }

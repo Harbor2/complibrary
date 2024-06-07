@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "Complibrary"
 include(":app")
 include(":complibrary")
+include(":testlibrary")
