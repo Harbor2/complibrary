@@ -2,7 +2,7 @@ package com.wyz.testlibrary
 
 object TestUtil {
 
-    fun getTestStr() {
-
+    fun getTestStr(): String {
+        return "Good"
     }
 }
